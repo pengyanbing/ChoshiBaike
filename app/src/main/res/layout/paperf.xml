@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#fada0a"
+        android:id="@+id/scandalTheme"
+        android:layout_height="56dp">
+        <ImageView
+            android:layout_width="48dp"
+            android:src="@drawable/a2"
+            android:padding="12dp"
+            android:id="@+id/iv0"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_height="48dp" />
+        <ImageView
+            android:layout_width="48dp"
+            android:id="@+id/add"
+            android:padding="8dp"
+            android:src="@drawable/hwpush_ic_toolbar_advance"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_height="48dp" />
+        <ImageView
+            android:layout_width="48dp"
+            android:padding="8dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/add"
+            android:id="@+id/shen"
+            android:src="@drawable/a32"
+            android:layout_height="48dp" />
+      <TextView
+          android:layout_width="wrap_content"
+          android:textStyle="bold"
+          android:layout_toRightOf="@id/iv0"
+          android:textSize="24sp"
+          android:textColor="@android:color/white"
+          android:layout_marginLeft="10dp"
+          android:layout_centerVertical="true"
+          android:text="小纸条"
+          android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/lv"
+        android:layout_height="match_parent">
+
+    </ListView>
+</LinearLayout>

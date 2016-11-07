@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <ImageView android:layout_width="48dp"
+            android:id="@+id/f0lviv"
+            android:padding="4dp"
+            android:layout_height="48dp" />
+        <TextView android:layout_width="wrap_content"
+            android:gravity="center"
+            android:id="@+id/title"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/f0lviv"
+            android:textStyle="bold"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:id="@+id/hot"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:layout_height="match_parent" />
+        <ImageView android:layout_width="36dp"
+            android:id="@+id/f0lviv1"
+            android:src="@drawable/hwpush_ic_toolbar_advance"
+            android:layout_toLeftOf="@id/hot"
+            android:layout_centerVertical="true"
+            android:layout_height="36dp" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="58dp"
+        android:maxLines="4"
+        android:id="@+id/content"
+        android:textSize="18sp"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:padding="4dp"
+        android:id="@+id/img"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="58dp"
+        android:visibility="gone"
+        android:id="@+id/eara"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="#467ed7"
+        android:layout_marginLeft="58dp"
+        android:text="查看全文"
+        android:visibility="gone"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginLeft="58dp"
+        android:id="@+id/imgll"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="72dp">
+        <ImageView
+            android:layout_width="0dp"
+            android:id="@+id/simg1"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="4dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="0dp"
+            android:id="@+id/simg2"
+            android:scaleType="centerCrop"
+            android:layout_weight="1"
+            android:layout_marginRight="4dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="0dp"
+            android:id="@+id/simg3"
+            android:scaleType="centerCrop"
+            android:layout_weight="1"
+            android:layout_marginRight="4dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="58dp"
+        android:layout_height="36dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:id="@+id/aera"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="36dp"
+            android:gravity="center_vertical"
+            android:id="@+id/count"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="36dp"
+            android:id="@+id/mcount"
+            android:src="@drawable/night"
+            android:layout_toLeftOf="@id/count"
+            android:layout_height="36dp" />
+        <TextView
+            android:layout_width="36dp"
+            android:gravity="center_vertical"
+            android:id="@+id/count1"
+            android:layout_toLeftOf="@id/mcount"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="36dp"
+            android:src="@drawable/good"
+            android:layout_toLeftOf="@id/count1"
+            android:layout_height="36dp" />
+    </RelativeLayout>
+</LinearLayout>

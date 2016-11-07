@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <com.example.administrator.choshibaike.scandal.view.myview.MyImagView
+            android:layout_width="48dp"
+            android:id="@+id/face"
+            app:shape="cirle"
+            android:padding="4dp"
+            android:layout_height="48dp" />
+        <TextView android:layout_width="wrap_content"
+            android:gravity="center"
+            android:id="@+id/title"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/face"
+            android:textStyle="bold"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:id="@+id/zcount"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:layout_height="match_parent" />
+        <ImageView android:layout_width="48dp"
+            android:id="@+id/f0lviv1"
+            android:src="@drawable/ic_download_list_item_more"
+            android:layout_toLeftOf="@id/zcount"
+            android:layout_height="48dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="58dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/contentll"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/content"
+            android:textSize="18sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/count"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

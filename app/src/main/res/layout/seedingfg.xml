@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#fada0a"
+        android:id="@+id/scandalTheme"
+        android:layout_height="56dp">
+        <ImageView
+            android:layout_width="48dp"
+            android:id="@+id/add"
+            android:padding="8dp"
+            android:src="@drawable/ic_download_list_item_more"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_height="48dp" />
+        <ImageView
+            android:layout_width="48dp"
+            android:padding="8dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/add"
+            android:id="@+id/shen"
+            android:src="@drawable/voice_search_button_normal"
+            android:layout_height="48dp" />
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_toLeftOf="@id/shen"
+            android:id="@+id/tableLayout"
+            android:layerType="hardware"
+            app:tabMode="scrollable"
+            app:tabTextColor="#eae8e8"
+            app:tabSelectedTextColor="@android:color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_height="36dp"></android.support.design.widget.TabLayout>
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:id="@+id/seedingVp"
+        android:layout_below="@id/scandalTheme"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>
